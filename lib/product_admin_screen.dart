@@ -93,8 +93,9 @@ class _ProductAdminScreenState extends State<ProductAdminScreen> {
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content:
-              Text('Por favor, completa todos los campos y selecciona una imagen.'),
+          content: Text(
+            'Por favor, completa todos los campos y selecciona una imagen.',
+          ),
         ),
       );
     }
@@ -157,8 +158,10 @@ class _ProductAdminScreenState extends State<ProductAdminScreen> {
                   children: [
                     Icon(Icons.image_outlined, size: 40, color: Colors.grey),
                     SizedBox(height: 8),
-                    Text('Seleccionar Imagen',
-                        style: TextStyle(color: Colors.grey)),
+                    Text(
+                      'Seleccionar Imagen',
+                      style: TextStyle(color: Colors.grey),
+                    ),
                   ],
                 ),
               )
@@ -179,7 +182,7 @@ class _ProductAdminScreenState extends State<ProductAdminScreen> {
     return Scaffold(
       backgroundColor: const Color(0xFFF5EEDC), // Fondo beige
       appBar: AppBar(
-        title: const Text('Shop Sqlite'),
+        title: const Text('Administrar Productos'),
         backgroundColor: const Color(0xFF6B4F4F), // Marrón consistente
       ),
       body: SingleChildScrollView(
@@ -315,8 +318,7 @@ class _ProductAdminScreenState extends State<ProductAdminScreen> {
                           ),
                           title: Text(
                             product.name,
-                            style:
-                                const TextStyle(fontWeight: FontWeight.bold),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                           subtitle: Text(product.description),
                           trailing: Text(

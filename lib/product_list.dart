@@ -11,7 +11,7 @@ class ProductsList extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFF5EEDC), // 🎨 Fondo beige
       appBar: AppBar(
-        title: const Text('Shop Sqlite'),
+        title: const Text('Productos Disponibles'),
         backgroundColor: const Color(0xFF6B4F4F), // Marrón consistente
       ),
       body: FutureBuilder<List<Product>>(
